@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #01022d, #000);
+  color: white;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: goldenrod;
+}
+
+.shoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.shoe-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+  border: 1px solid goldenrod;
+}
+
+.shoe-card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.shoe-card img {
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.shoe-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: white;
+}
+
+.shoe-card p {
+  font-size: 18px;
+  color: goldenrod;
+}
+.shoe-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
